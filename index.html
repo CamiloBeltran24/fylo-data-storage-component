@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Fylo data storage component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- imagen de fondo parte inferior -->
+    <div class="background"></div>
+
+    <!-- Contenedor de cuadros de informacion -->
+    <div class="container">
+      <!-- Primer Cuadro -->
+      <div class="fylo">
+        <img src="./images/logo.svg" alt="" />
+        <div class="icons">
+          <div class="icon-file"></div>
+          <div class="icon-folder"></div>
+          <div class="icon-upload"></div>
+        </div>
+      </div>
+      <!-- Fin Primer Cuadro -->
+
+      <!-- Barra de Progreso -->
+      <div class="progressBar">
+        <div class="progressContent">
+          <!-- Mensaje memoria utilizada -->
+          <p id="message">
+            You’ve used <strong id="count"> 815 GB </strong> of your storage
+          </p>
+          <!-- Fin mensaje memoria utilizada -->
+          <!-- Memoria Restante -->
+          <div class="left">
+            <p><strong class="rest-number">185 </strong>GB Left</p>
+          </div>
+          <!-- Fin memoria Restante -->
+          <!-- maquetado Barra -->
+          <div class="bar-container">
+            <div class="bar">
+              <div class="point"></div>
+            </div>
+          </div>
+          <!-- Fin Maquetado Barra -->
+          <!-- numeros de cantidad inferiores -->
+          <div class="memoriAll">
+            <p class="ceroGB">0 GB</p>
+            <p class="tera">1000 GB</p>
+          </div>
+        </div>
+      </div>
+      <!-- Fin Barra de Progreso -->
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>

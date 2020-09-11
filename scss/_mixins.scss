@@ -1,0 +1,38 @@
+@mixin centradoFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin font {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+@mixin fontBold {
+  @include font;
+  font-weight: 700;
+}
+@mixin transition {
+  transition: all;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+@mixin icons {
+  width: 50px;
+  height: 50px;
+  background-color: $Very-Dark-Blue;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  border-radius: 10px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 81%;
+  }
+}

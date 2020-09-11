@@ -1,0 +1,208 @@
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 81%;
+  }
+}
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  background-color: #0c122c;
+  color: #848794;
+  font-weight: 400;
+}
+
+.background {
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  bottom: 0;
+  background-image: url(../images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+
+.container {
+  width: 900px;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.container .fylo {
+  box-sizing: border-box;
+  width: 340px;
+  height: 220px;
+  border-radius: 15px;
+  border-top-right-radius: 50%;
+  background-color: #1d2c67;
+}
+.container .fylo img {
+  margin-top: 60px;
+  margin-left: 40px;
+}
+.container .fylo .icons {
+  width: 90%;
+  margin: auto;
+  margin-left: 25px;
+  margin-top: 40px;
+  justify-content: space-around;
+}
+.container .fylo .icons .icon-file {
+  background-image: url(../images/icon-document.svg);
+  width: 50px;
+  height: 50px;
+  background-color: #0c122c;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  border-radius: 10px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.container .fylo .icons .icon-folder {
+  background-image: url(../images/icon-folder.svg);
+  width: 50px;
+  height: 50px;
+  background-color: #0c122c;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  border-radius: 10px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.container .fylo .icons .icon-upload {
+  background-image: url(../images/icon-upload.svg);
+  width: 50px;
+  height: 50px;
+  background-color: #0c122c;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  border-radius: 10px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.container .progressBar {
+  width: 530px;
+  height: 150px;
+  background-color: #1d2c67;
+  border-radius: 10px;
+  position: relative;
+  top: 34px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+.container .progressBar .progressContent {
+  width: 90%;
+  position: relative;
+}
+.container .progressBar .progressContent #message #count {
+  color: #dddbff;
+}
+.container .progressBar .progressContent .bar-container {
+  width: 100%;
+  height: 20px;
+  background-color: #0c122c;
+  border-radius: 10px;
+  position: relative;
+}
+.container .progressBar .progressContent .bar-container .bar {
+  height: 100%;
+  width: 81%;
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  background-image: linear-gradient(to right, #ffa399, #ff4d97);
+  border-radius: 15px;
+  animation-name: progress;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+.container .progressBar .progressContent .bar-container .bar .point {
+  height: 100%;
+  width: 20px;
+  background-color: #dddbff;
+  border-radius: 50%;
+}
+.container .progressBar .progressContent .left {
+  position: absolute;
+  background-color: #dddbff;
+  width: 170px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: -50px;
+  right: 0;
+  border-radius: 10px;
+  border-bottom-right-radius: 0;
+}
+.container .progressBar .progressContent .left::after {
+  content: " ";
+  border-top: 1px solid #dddbff;
+  border-right: 30px solid #dddbff;
+  border-bottom: 30px solid transparent;
+  position: relative;
+  bottom: -40px;
+}
+.container .progressBar .progressContent .left p {
+  margin: auto;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+.container .progressBar .progressContent .left p .rest-number {
+  color: #0c122c;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 0;
+}
+.container .progressBar .progressContent .memoriAll {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #dddbff;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 375px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container .fylo {
+    width: 90%;
+  }
+  .container .fylo img {
+    margin-top: 35px;
+  }
+  .container .progressBar {
+    width: 90%;
+  }
+  .container .progressBar #message {
+    text-align: center;
+  }
+  .container .progressBar .progressContent .left {
+    left: 30px;
+    top: 88px;
+  }
+  .container .progressBar .progressContent .left::after {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
