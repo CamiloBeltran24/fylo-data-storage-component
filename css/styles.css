@@ -15,7 +15,7 @@ body {
 }
 body .attribution {
   width: 100%;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .background {
@@ -211,6 +211,7 @@ body .attribution {
   .container .progressBar .progressContent .left {
     left: 60px;
     top: 88px;
+    border-bottom-right-radius: 10px;
   }
   .container .progressBar .progressContent .left::after {
     display: none;

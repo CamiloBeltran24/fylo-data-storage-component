@@ -8,7 +8,7 @@ body {
   font-weight: 400;
   .attribution {
     width: 100%;
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 .background {
@@ -177,6 +177,7 @@ body {
         .left {
           left: 60px;
           top: 88px;
+          border-bottom-right-radius: 10px;
           &::after {
             display: none;
           }
