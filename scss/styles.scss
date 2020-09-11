@@ -6,6 +6,10 @@ body {
   background-color: $Very-Dark-Blue;
   color: $Grayis-Blue;
   font-weight: 400;
+  .attribution {
+    width: 100%;
+    font-size: 10px;
+  }
 }
 .background {
   width: 100%;
@@ -145,6 +149,14 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .background {
+    background-image: url(../images/bg-mobile.png);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    // background-repeat: repeat;
+  }
   .container {
     width: 100%;
     max-width: 375px;
@@ -163,7 +175,7 @@ body {
       }
       .progressContent {
         .left {
-          left: 30px;
+          left: 60px;
           top: 88px;
           &::after {
             display: none;
