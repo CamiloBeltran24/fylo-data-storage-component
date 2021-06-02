@@ -8,6 +8,6 @@ HI!.
 
 This is a Challenge of [Frontend Mentor](https://www.frontendmentor.io).
 
-All the code was written by @CamiloBeltran.
+All the code was written by [@CamiloBeltran.](https://twitter.com/CamiloBeltran).
 
 This project was built with HTML and CSS
